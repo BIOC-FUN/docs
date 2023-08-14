@@ -15,17 +15,30 @@ export default defineUserConfig({
             },
             {
                 text: '梅林服务器',
-                link: '/meilin.md',
+                children: [
+                    {
+                        text: '服务器指南',
+                        children: [
+                            {
+                                text: '介绍',
+                                link: '/meilin/',
+                                activeMatch: '/meilin/README.md',
+                            },
+                            {
+                                text: '指令集',
+                                link: '/meilin/command.md',
+                                activeMatch: '/meilin/command.md',
+                            },
+                        ],
+                    }
+                ],
             },
             {
                 text: '贡献者',
                 link: '/contributing.md',
             },
-            {
-                text: 'GitHub',
-                link: 'https://github.com/BIOC-FUN/docs',
-            },
         ],
+        repo: 'BIOC-FUN/docs',
     }),
     plugins: [
         docsearchPlugin({

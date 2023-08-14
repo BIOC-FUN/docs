@@ -1,8 +1,8 @@
 ---
 lang`：zh-CN
-title`：梅林服务器
+title`：指令集
 ---
-# 梅林服务器
+# 指令集
 > 指令更新时间：2023/8/13
 ## WorldEdit（创世神）
 `/.s`：Execute last CraftScript
